@@ -23,5 +23,15 @@ public class PiggyBank {
         });
     }
 
+    public void add(Bill bill) {
+        if (this.bank.get(bill) == null) {
+            this.bank.put(String.valueOf(bill.getName()), bill.getNumOfBills());
+        }
+        this.bank.forEach((coin1, integer) -> {
+            if (bill.getName() == coin1) {
+                integer += bill.getNumOfBills();
+            }
+        });
+    }
 }
 

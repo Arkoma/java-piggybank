@@ -1,32 +1,32 @@
 package piggybank;
 
-public abstract class Coin {
+public abstract class Bill {
 
     public double total = 0;
     public double value = 0;
     public String name;
-    public int numOfCoins = 1;
+    public int numOfBills = 1;
 
 
-    public Coin(int numOfCoins) {
-        addCoins(numOfCoins);
-        }
+    public Bill(int numOfBills) {
+        addCoins(numOfBills);
+    }
 
-    protected Coin() {
+    protected Bill() {
         this.total = total;
         this.name = name;
-        this.numOfCoins = numOfCoins;
+        this.numOfBills = numOfBills;
         this.value = value;
     }
 
 
     public abstract double getTotal();
     public abstract String getName();
-    public abstract void addCoins(int numOfCoins);
-    public abstract int getNumOfCoins();
+    public abstract void addCoins(int numOfBills);
+    public abstract int getNumOfBills();
 
     @Override
     public String toString() {
-        return numOfCoins + " " + name;
+        return name + numOfBills;
     }
 }

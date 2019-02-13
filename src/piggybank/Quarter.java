@@ -1,21 +1,19 @@
 package piggybank;
 
-public class Quarter extends Coin {
+public class Quarter extends Bill {
 
     public Quarter(int numOfCoins) {
-        super(numOfCoins);
         addCoins(numOfCoins);
     }
 
     public Quarter() {
         value = .25;
         name = "Quarter";
-        numOfCoins = 0;
     }
 
     @Override
     public double getTotal() {
-        return value * getNumOfCoins();
+        return value * getNumOfBills();
     }
 
     @Override
@@ -25,11 +23,11 @@ public class Quarter extends Coin {
 
     @Override
     public void addCoins(int numOfCoins) {
-        this.numOfCoins += numOfCoins;
+        this.numOfBills += numOfCoins;
     }
 
     @Override
-    public int getNumOfCoins() {
-        return this.numOfCoins;
+    public int getNumOfBills() {
+        return this.numOfBills;
     }
 }

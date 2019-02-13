@@ -6,6 +6,8 @@ public class Application {
 
     private static void processPiggyBank() {
         piggyBank.add(new Quarter());
+        piggyBank.add(new Dime());
+
     }
 
     public static void main(String[] args) {
