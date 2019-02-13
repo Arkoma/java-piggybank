@@ -9,7 +9,7 @@ This money can be
 * A Penny worth $0.01
 Each coin object should know its value, how many of that coin is in the object, and how to print its value.
 
-The main program will look something like this pseudocode (remember pseudocode is not meant to be syntactically correct but explain the algorithm):
+The piggybank program will look something like this pseudocode (remember pseudocode is not meant to be syntactically correct but explain the algorithm):
 
 * Create collection
 * piggyBank.add(new Quarter())
