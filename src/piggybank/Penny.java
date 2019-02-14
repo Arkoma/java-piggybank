@@ -1,17 +1,17 @@
 package piggybank;
 
-public class Quarter extends Money {
+public class Penny extends Money {
 
-    public Quarter(int numOfMonies) {
+    public Penny(int numOfMonies) {
         addMonies(numOfMonies);
-        value = .25;
-        name = "Quarter";
+        value = .01;
+        name = "Penny";
     }
 
-    public Quarter() {
+    public Penny() {
         addMonies(1);
-        value = .25;
-        name = "Quarter";
+        value = .01;
+        name = "Penny";
     }
 
     @Override

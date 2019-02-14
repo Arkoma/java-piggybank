@@ -1,23 +1,31 @@
 package piggybank;
 
-public class Dime extends Bill {
+public class Dime extends Money {
+
+    public Dime(int numOfMonies) {
+        addMonies(numOfMonies);
+        value = .1;
+        name = "Dime";
+    }
+
+    public Dime() {
+        addMonies(1);
+        value = .1;
+        name = "Dime";
+    }
+
     @Override
     public double getTotal() {
-        return value * numOfBills;
+        return value * numOfMonies;
     }
 
     @Override
     public String getName() {
-        return null;
+        return name;
     }
 
     @Override
-    public void addCoins(int numOfCoins) {
-
-    }
-
-    @Override
-    public int getNumOfBills() {
-        return 0;
+    public void addMonies(int numOfMonies) {
+        this.numOfMonies += numOfMonies;
     }
 }
